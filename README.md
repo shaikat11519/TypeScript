@@ -94,3 +94,25 @@ console.log("Student Drop at First index: "+ studentNameAndAge);
 studentNameAndAge.unshift("chomok");
 console.log("Student Insert at First index: "+ studentNameAndAge);
 ```
+
+### Tuple Data Type
+> Tuple Type | Mixed data type
+
+```typeScript
+let studentNameAndAge: [string, number];
+studentNameAndAge = ["Shaikat", 41];
+
+studentNameAndAge.push("Alif", 21);
+console.log(studentNameAndAge);
+```
+
+### Tuple Data Type
+> Tuple Type | Mixed data type
+
+```typeScript
+let studentNameAndAge: [string, number];
+studentNameAndAge = ["Shaikat", 41];
+
+studentNameAndAge.push("Alif", 21);
+console.log(studentNameAndAge);
+```
