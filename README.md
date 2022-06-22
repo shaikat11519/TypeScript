@@ -8,7 +8,7 @@
 - undefined, 
 - null
 
-'``typescript
+```typescript
 let studentId: number;
 let studentFirst: string;
 let studentLast: string;
