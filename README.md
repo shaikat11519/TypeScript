@@ -62,10 +62,9 @@ displayStudentId("171-15-1163");
 ```
 
 ### Array Data Type
-> 
 > _Multiple Type Of Array_
 
-> Single Type of Array
+> _Single Type of Array_
 ```typeScript
 
 let studentNames: string[];
