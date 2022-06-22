@@ -16,12 +16,12 @@
 
 
 ### Built in data type
-- number, 
-- string,
-- boolean, 
-- void, 
-- undefined, 
-- null
+- _number_
+- _string_
+- _boolean_
+- _void_
+- _undefined_
+- _null_
 
 ```typescript
 let studentId: number;
@@ -45,7 +45,7 @@ console.log(`ID: ${studentId}, Name: ${studentName}, is Student: ${isStudent}`);
 ```
 
 ### Union Data Type
-> User Define Type 
+> _User Define Type 
 
 ```typeScript
 let studentId: string | number;
@@ -106,8 +106,8 @@ studentNameAndAge.push("Alif", 21);
 console.log(studentNameAndAge);
 ```
 
-### Tuple Data Type
-> Tuple Type | Mixed data type
+### Enum Type
+> Enum Type: no duplicate data, helps to store constants
 
 ```typeScript
 let studentNameAndAge: [string, number];
@@ -116,3 +116,8 @@ studentNameAndAge = ["Shaikat", 41];
 studentNameAndAge.push("Alif", 21);
 console.log(studentNameAndAge);
 ```
+
+### Enum Data Type
+- _numeric_
+- _string_
+- _hetergenous_
