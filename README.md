@@ -63,6 +63,7 @@ displayStudentId("171-15-1163");
 
 ### Array Data Type
 > Multiple Type Of Array
+
 > Single Type of Array
 ```typeScript
 
