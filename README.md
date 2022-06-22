@@ -62,7 +62,8 @@ displayStudentId("171-15-1163");
 ```
 
 ### Array Data Type
-
+> Multiple Type Of Array
+> Single Type of Array
 ```typeScript
 
 let studentNames: string[];
@@ -72,7 +73,7 @@ studentNames = ["Shaikat", "Alif", "Showan", "Suzon"];
 
 console.log(studentNames[1]);
 
-> Multiple Type Of Array
+// Multiple Type Of Array
 
 let studentNameAndAge: (number | string) [];
 studentNameAndAge = ["Shaikat", "Alif", "Showan", 21, 23, 24];
