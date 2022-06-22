@@ -106,18 +106,63 @@ studentNameAndAge.push("Alif", 21);
 console.log(studentNameAndAge);
 ```
 
-### Enum Type
+### Enum Data Type
 > Enum Type: no duplicate data, helps to store constants
 
-```typeScript
-let studentNameAndAge: [string, number];
-studentNameAndAge = ["Shaikat", 41];
-
-studentNameAndAge.push("Alif", 21);
-console.log(studentNameAndAge);
-```
-
-### Enum Data Type
 - _numeric_
 - _string_
 - _hetergenous_
+
+
+> Numeric Enum
+```typeScript
+enum RequestType{
+    readData,
+    //readData = 1,
+    saveData,
+    deleteData,
+}
+
+console.log(RequestType);
+console.log(RequestType.readData);
+console.log(RequestType["readData"]);
+```
+
+> String Enum
+```typeScript
+enum RequestType2{
+    readData = "READ_DATA",
+    deleteData = "DELETE_DATA",
+}
+
+console.log(RequestType2.deleteData);
+console.log(RequestType2["deleteData"]);
+```
+
+> Hetergenous Enum
+```typeScript
+enum RequestType3{
+    readData = "READ_DATA",
+    deleteData = "DELETE_DATA",
+    roll = 1163
+}
+console.log(RequestType3.deleteData);
+console.log(RequestType3.roll);
+```
+
+### Any type
+-> user input values
+
+```js
+let userName: any;
+
+userName = "Shaikat";
+userName = 1163;
+userName = true;
+userName = [41, 36];
+
+ // another Example
+ let password: any;
+ let passwords: any[];
+ ```
+
