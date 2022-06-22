@@ -60,3 +60,35 @@ function displayStudentId(studentId: string | number){
 displayStudentId(1163);
 displayStudentId("171-15-1163");
 ```
+
+### Array Data Type
+
+```typeScript
+
+let studentNames: string[];
+// let studentNames Array<string>
+
+studentNames = ["Shaikat", "Alif", "Showan", "Suzon"];
+
+console.log(studentNames[1]);
+
+> Multiple Type Of Array
+
+let studentNameAndAge: (number | string) [];
+studentNameAndAge = ["Shaikat", "Alif", "Showan", 21, 23, 24];
+
+console.log(studentNameAndAge[3]);
+console.log("Students Sort List: "+ studentNameAndAge.sort());
+
+studentNameAndAge.push("Ashiq");
+console.log("Student insert at last index: "+ studentNameAndAge);
+
+studentNameAndAge.pop();
+console.log("Student Drop from at last index: "+ studentNameAndAge);
+
+studentNameAndAge.shift();
+console.log("Student Drop at First index: "+ studentNameAndAge);
+
+studentNameAndAge.unshift("chomok");
+console.log("Student Insert at First index: "+ studentNameAndAge);
+```
