@@ -45,7 +45,7 @@ console.log(`ID: ${studentId}, Name: ${studentName}, is Student: ${isStudent}`);
 ```
 
 ### Union Data Type
-> _User Define Type 
+> _User Define Type_ 
 
 ```typeScript
 let studentId: string | number;
@@ -62,7 +62,8 @@ displayStudentId("171-15-1163");
 ```
 
 ### Array Data Type
-> Multiple Type Of Array
+> 
+> _Multiple Type Of Array_
 
 > Single Type of Array
 ```typeScript
@@ -96,7 +97,7 @@ console.log("Student Insert at First index: "+ studentNameAndAge);
 ```
 
 ### Tuple Data Type
-> Tuple Type | Mixed data type
+> _Tuple Type | Mixed data type_
 
 ```typeScript
 let studentNameAndAge: [string, number];
@@ -107,14 +108,14 @@ console.log(studentNameAndAge);
 ```
 
 ### Enum Data Type
-> Enum Type: no duplicate data, helps to store constants
+> _Enum Type: no duplicate data, helps to store constants_
 
 - _numeric_
 - _string_
 - _hetergenous_
 
 
-> Numeric Enum
+> _Numeric Enum_
 ```typeScript
 enum RequestType{
     readData,
@@ -128,7 +129,7 @@ console.log(RequestType.readData);
 console.log(RequestType["readData"]);
 ```
 
-> String Enum
+> _String Enum_
 ```typeScript
 enum RequestType2{
     readData = "READ_DATA",
@@ -139,7 +140,7 @@ console.log(RequestType2.deleteData);
 console.log(RequestType2["deleteData"]);
 ```
 
-> Hetergenous Enum
+> _Hetergenous Enum_
 ```typeScript
 enum RequestType3{
     readData = "READ_DATA",
@@ -151,7 +152,7 @@ console.log(RequestType3.roll);
 ```
 
 ### Any type
--> user input values
+-> _user input values_
 
 ```js
 let userName: any;
