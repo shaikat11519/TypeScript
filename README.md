@@ -1,18 +1,20 @@
 ## TypeScript
 
-#### What is TypeScript?
-
-- In a simple words, Types + JavaScript = TypeScript
-- It is a superset of JS
-- developed and maintained by Microsoft
-
-#### Why TypeScript?
-
-- JS Check types in run time while typescript add static typing to JS so we can handle errors before running the program.
-- increase readability and code quality
-- popular JS libraray Angular use TypeScript.
-- It can be used in both: client and server side.
-- Intellisense IDE Support while coding: code completion, content assist and code hinting
+##### Install and Run Type Script
+> _Install typescript_
+  ```js
+     npm intsall typescript --save-dev (local)
+     npm install -g typescript (global)
+  ```
+  > File textension
+  ```typeScript
+   npx tsc fileName.ts
+  ```
+  > _Run typescript_
+  ```typeScript
+  tsc fileName.ts --watch
+  Example: tsc index.ts --watch
+  ```
 
 
 ### Built in data type
