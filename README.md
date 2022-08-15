@@ -153,7 +153,7 @@ console.log(RequestType3.roll);
 ```
 
 ### Any type
--> _user input values_
+> _user input values_
 
 ```ts
 let userName: any;
@@ -166,5 +166,150 @@ userName = [41, 36];
  // another Example
  let password: any;
  let passwords: any[];
+ ```
+ 
+### Object Type
+> _Example - 1_
+
+```ts
+let users: object[];
+
+users = [];
+
+let userOne: { userName: String; userId: number };
+let userTwo: { userName: String; userId: number };
+
+userOne = { userName: "Shaikat", userId: 121 };
+userTwo = { userName: "Ashiq", userId: 635 };
+
+users.push(userOne);
+users.push(userTwo);
+
+// console.log(users);
+// Print another way
+for (const key in users) {
+  console.log(users[key]["userName"]);
+}
+ ```
+ > _Example - 2 | Custom Type_
+```ts
+type User = { userName: String; userId: number };
+let users: User[];
+users = [];
+
+let userOne: User;
+let userTwo: User;
+
+userOne = { userName: "Shaikat", userId: 121 };
+userTwo = { userName: "Ashiq", userId: 635 };
+
+users.push(userOne);
+users.push(userTwo);
+
+console.log(users);
+// Print another way
+// for (const key in users) {
+//   console.log(users[key]["userName"]);
+// }
+
+//Custom Type Example 2
+type RequestType = "GET" | "POST";
+let getRequest: RequestType;
+getRequest = "GET";
+
+function requestHandler(requestType: RequestType) {
+  console.log(requestType);
+}
+ ```
+
+### Class and Object
+> _Class Create and Access_
+- Properties
+- Methods
+- Constructor
+
+```ts
+class User {
+  userName: string;
+  age: number;
+
+  constructor(userName: string, age: number) {
+    this.userName = userName;
+    this.age = age;
+  }
+
+  dispay(): void {
+    console.log(`username: ${this.userName}, age: ${this.age}`);
+  }
+}
+
+let userOne = new User("Shaikat", 32);
+userOne.dispay();
+ ```
+> _Abstract class create and access_
+
+```ts
+abstract class User {
+  userName: string;
+  age: number;
+
+  constructor(userName: string, age: number) {
+    this.userName = userName;
+    this.age = age;
+  }
+
+  abstract dispay(): void;
+}
+
+class Student extends User {
+  studentId: number;
+
+  constructor(userName: string, age: number, studentId: number) {
+    super(userName, age);
+    this.studentId = studentId;
+  }
+
+  dispay(): void {
+    console.log(
+      `username: ${this.userName}, age: ${this.age},ID: ${this.studentId}`
+    );
+  }
+}
+
+let studentOne = new Student("shaikat", 33, 1121);
+studentOne.dispay();
+ ```
+ > _Abstract class create and access_
+
+```ts
+abstract class User {
+  userName: string;
+  age: number;
+
+  constructor(userName: string, age: number) {
+    this.userName = userName;
+    this.age = age;
+  }
+
+  abstract dispay(): void;
+}
+
+class Student extends User {
+  studentId: number;
+
+  constructor(userName: string, age: number, studentId: number) {
+    super(userName, age);
+    this.studentId = studentId;
+  }
+
+  dispay(): void {
+    console.log(
+      `username: ${this.userName}, age: ${this.age},ID: ${this.studentId}`
+    );
+  }
+}
+
+let studentOne = new Student("shaikat", 33, 1121);
+studentOne.dispay();
  ```
 
