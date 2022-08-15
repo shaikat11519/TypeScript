@@ -155,7 +155,7 @@ console.log(RequestType3.roll);
 ### Any type
 -> _user input values_
 
-```js
+```ts
 let userName: any;
 
 userName = "Shaikat";
